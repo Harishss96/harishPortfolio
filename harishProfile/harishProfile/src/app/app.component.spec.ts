@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'harishProfiles'`, () => {
+  it(`should have as title 'harishProfile'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('harishProfiles');
+    expect(app.title).toEqual('harishProfile');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('harishProfiles app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('harishProfile app is running!');
   });
 });

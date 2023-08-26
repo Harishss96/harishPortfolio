@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "harishProfiles": {
+    "harishProfile": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/harish-profiles",
+            "outputPath": "dist/harish-profile",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "harishProfiles:build:production"
+              "browserTarget": "harishProfile:build:production"
             },
             "development": {
-              "browserTarget": "harishProfiles:build:development"
+              "browserTarget": "harishProfile:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "harishProfiles:build"
+            "browserTarget": "harishProfile:build"
           }
         },
         "test": {
@@ -96,6 +96,6 @@
     }
   },
   "cli": {
-    "analytics": "d3b49e5a-9a5a-4dc6-8658-dd43e02b9624"
+    "analytics": "1ebdb823-1646-42be-b6e4-8eff996daf44"
   }
 }
